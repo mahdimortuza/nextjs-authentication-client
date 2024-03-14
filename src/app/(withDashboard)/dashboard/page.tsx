@@ -17,7 +17,10 @@ const DashboardPage = async () => {
           </h1>
           <Image
             className="mx-auto rounded-full mt-5"
-            src={session?.user?.image}
+            src={
+              session?.user?.image ||
+              "https://cdn.pixabay.com/photo/2017/02/23/13/05/avatar-2092113_1280.png"
+            }
             width={100}
             height={100}
             alt="user image"
